@@ -1,0 +1,35 @@
+
+/*  tamaños para media queries (desde este tamaño en adelante, ej: @media (min-width: $tablet) */
+$medidas: (
+    "telefono-m": 320px,
+    "telefono-xl": 480px, //por encima pasamos a tablet
+    "tablet": 768px,
+    "desktop": 960px, // por encima pasamos a ordenador
+    "desktop-m": 1024px,
+    "desktop-xl": 1440px
+);
+
+/* fuente principal */
+$fuentes: (
+    "tipo-principal": Helvetica Arial sans-serif,
+    "tipo-secundaria": Verdana
+);
+
+/* colores */
+$colores: (
+    "color-primario": #181818,
+    "color-secundario": #f0f0f0,
+    "color-hover-boton":#10209A40,
+    "color-hover": #5D4CC9,
+    "color-fondo": #ffc100e0,   //rgb(255, 193, 0)
+    "color-fondo-transp": #ffc1007d,
+    "color-activo": #61CE70,
+    "color-fondo-img-JC": #ffc100e0,
+    "color-fondo-img-JC-dark": #343d5b,
+    "color-ola-1": #f0f0f033,
+    "color-ola-2": #f0f0f080,
+    "color-ola-3": #f0f0f0,
+    "color-ola-1-dark": #18181833,
+    "color-ola-2-dark": #18181880,
+    "color-ola-3-dark": #181818
+); 
