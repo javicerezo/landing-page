@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,155 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="build/css/app.css">
     <title>Landing Page</title>
 </head>
 <body>
-    
+    <header class="c-header">
+        <div class="c-header__contenedor">
+            <div class="c-header__logo">
+                <div class="c-header__izq"></div>
+                <div class="c-header__der">
+                    <p class="c-header__p">catálogo <span> 05-2023</span></p>
+                </div>
+            </div>
+            <ul class="c-header__nav">
+                <li class="c-header__li"><a href="#c-seccion1"><i class="fa-solid fa-circle"></i></a></li>
+                <li class="c-header__li"><a href="#c-seccion2"><i class="fa-solid fa-circle"></i></a></li>
+                <li class="c-header__li"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="c-portada"></section>
+
+    <section class="c-seccion1" id="c-seccion1">
+        <div class="c-seccion1__contenedor">
+            <div class="c-seccion1__contenedor-descripcion">
+                <div class="c-seccion1__cuadrito c-cuadrito">
+                    <div class="c-cuadrito__contenedor">
+                        <div class="c-cuadrito__p"><p>01</p></div>
+                        <i class="c-cuadrito__i fa-solid fa-arrow-down-long"></i>
+                    </div>
+                </div>
+                    <h2 class="c-seccion1__titulo">nueva coleccion</h2>
+                    <p class="c-seccion1__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis praesentium qui excepturi ipsa minima tenetur quibusdam aspernatur sint sed, nesciunt eveniet libero delectus adipisci, eligendi quidem possimus ducimus! Cum.</p>
+                    <button class="c-seccion1__boton c-boton">ver</button>
+            </div>
+            <div class="c-seccion1__contenedor-producto">
+                <div class="c-seccion1__producto">
+                    <div class="c-seccion1__producto-arriba"></div>
+                    <div class="c-seccion1__producto-abajo"></div>
+                    <div class="c-seccion1__nombre">
+                        <h5 class="c-seccion1__nombre-h5">Dynafit</h5>
+                        <h5 class="c-seccion1__nombre-h5">Mezzalama</h5>
+                        <div class="c-seccion1__nombre-raya"></div>
+                    </div>
+                    <div class="c-seccion1__img">
+                        <img src="build/img/nueva-coleccion/botas1.jpg" alt="imagen botas">
+                    </div>
+                    <div class="c-seccion1__listado">
+                        <ul class="c-seccion1__ul">
+                            <li class="c-seccion1__li"><i class="fa-solid fa-circle"></i></li>
+                            <li class="c-seccion1__li"><i class="fa-solid fa-circle"></i></li>
+                            <li class="c-seccion1__li"><i class="fa-solid fa-circle"></i></li>
+                        </ul>
+                        <div class="c-seccion1__divisor"></div>
+                        <div class="c-seccion1__flechas">
+                            <li class="c-seccion1__li"><i class="fa-solid fa-arrow-left-long"></i></li>
+                            <li class="c-seccion1__li"><i class="fa-solid fa-arrow-right-long"></i></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HACER GRID O CARRUSEL CON LOS PRODUCTOS -->
+    <section class="c-seccion2" id="c-seccion2">
+        <div class="c-seccion2__contenedor">
+            <div class="c-seccion2__multimedia">
+                <img src="build/img/nueva-coleccion/botas1.jpg" alt="imagen botas">
+            </div>
+            <div class="c-seccion2__cuadrito c-cuadrito">
+                <div class="c-cuadrito__contenedor--izq">
+                    <div class="c-cuadrito__p--izq"><p>02</p></div>
+                    <i class="c-cuadrito__i--izq fa-solid fa-arrow-down-long"></i>
+                </div>
+            </div>
+            <div class="c-seccion2__raya"></div>
+        </div>
+        <div class="c-raya__contenedor">
+            <div class="c-raya__raya"></div>
+        </div>
+    </section>
+
+    <section class="c-seccion3">
+        <div class="c-seccion3__contenedor">
+            <div class="c-seccion3__contenedor-descripcion">
+                <div class="c-seccion3__cuadrito c-cuadrito">
+                    <div class="c-cuadrito__contenedor">
+                        <div class="c-cuadrito__p"><p>03</p></div>
+                        <i class="c-cuadrito__i fa-solid fa-arrow-down-long"></i>
+                    </div>
+                </div>
+                <h3 class="c-seccion3__titulo">perfeccionamiento</h3>
+                <h3 class="c-seccion3__titulo">llevado al limite</h3>
+                <p class="c-seccion3__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis praesentium qui excepturi ipsa minima tenetur quibusdam aspernatur sint sed, nesciunt eveniet libero delectus adipisci, eligendi quidem possimus ducimus! Cum.</p>
+                <div class="c-seccion3__botones">
+                    <i class="c-seccion3__botones-flecha fa-solid fa-arrow-right-long"></i>
+                    <button class="c-seccion3__botones-boton c-boton">comenzar</button>
+                </div>
+                <div class="c-seccion3__decoracion">
+                    <i class="fa-solid fa-circle"></i>
+                    <div class="c-seccion3__decoracion-contenedor">
+                        <div class="c-seccion3__decoracion-raya"></div>
+                        <div class="c-seccion3__decoracion-arriba"></div>
+                        <div class="c-seccion3__decoracion-abajo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="c-seccion4">
+        <div class="c-seccion4__contenedor">
+            <div class="c-seccion4__multimedia">
+                <div class="c-seccion4__multimedia-arriba"></div>
+                <div class="c-seccion4__multimedia-abajo"></div>
+                <div class="c-seccion4__contenedor-imagen">
+                    <img src="build/img/nueva-coleccion/botas1.jpg" alt="imagen botas">
+                </div>
+                <div class="c-seccion4__contenedor-descripcion">
+                    <h3 class="c-seccion4__titulo">perfeccionamiento</h3>
+                    <h3 class="c-seccion4__titulo">llevado al limite</h3>
+                    <p class="c-seccion4__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis praesentium qui excepturi ipsa minima tenetur quibusdam aspernatur sint sed, nesciunt eveniet libero delectus adipisci, eligendi quidem possimus ducimus! Cum.</p>                
+                </div>
+            </div>
+            <div class="c-seccion4__cuadrito c-cuadrito">
+                <div class="c-cuadrito__contenedor--izq">
+                    <div class="c-cuadrito__p--izq"><p>04</p></div>
+                    <i class="c-cuadrito__i--izq fa-solid fa-arrow-down-long"></i>
+                </div>
+            </div>
+        </div>
+        <div class="c-raya__contenedor">
+            <div class="c-raya__raya"></div>
+        </div>
+    </section>
+
+    <footer class="c-footer o-container-100">
+        <div class="c-footer__contenedor">
+            <ul class="c-footer__ul">
+                <li class="c-footer__li"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="c-footer__li"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="c-footer__li"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="c-footer__li"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <div class="c-footer__copy">
+                <p>1995-2023 Tienda de Esquí y montaña S.L. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -22,7 +22,4 @@ body {
     color: map-get(v.$colores, color-primario);
     background-color: map-get(v.$colores, color-secundario);
 
-    // &.darkmode {
-
-    // }
 }

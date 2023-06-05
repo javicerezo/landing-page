@@ -1,0 +1,77 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-seccion3 {
+    margin: 3rem 0;
+    &__contenedor {
+        width: 90%;
+        position: relative;
+        @include m.flex (row, nowrap, space-between, center);
+        &-descripcion {
+            @include m.flex (column, nowrap, center, flex-start);
+            position: relative;
+            margin-left: 10rem;
+        }
+    }
+    &__cuadrito {
+        @include m.position (absolute, 1.3994rem, null, null, -5.3563rem);
+    }
+    &__titulo {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    &__titulo:nth-child(2) {
+        text-transform: capitalize;
+    }
+    &__titulo:nth-child(3) {
+        font-weight: normal;
+        margin-left: 3rem;
+    }
+    &__texto {
+        font-size: 1.1rem;
+    }
+    &__botones {
+        @include m.flex (row, nowrap, flex-end, center);
+        margin-top: 3rem;
+        width: 100%;
+        &-flecha {
+            font-size: 2em;
+        }
+        &-boton {
+            margin-left: 3rem;
+        }
+    }
+    &__decoracion {
+        @include m.flex (row, nowrap, flex-end, center);
+        margin-top: 1rem;
+        width: 100%;
+        i {
+            font-size: 0.5em;
+            margin-right: 1rem;
+        }
+        &-contenedor {
+            position: relative;
+        }
+        &-raya{
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding-right: 7rem;
+            max-width: 10rem;
+        }
+        &-arriba, &-abajo {
+            max-width: 5.25rem;
+            margin: 0 auto;
+            width: 50%;
+            height: 5px;
+            background-color: map-get(v.$colores, color-botones);
+        }
+        &-arriba {
+            @include m.position (absolute, -0.3125rem, 1rem, null, null);
+            border-radius: 5px 5px 0 0;
+        }
+        &-abajo {
+            @include m.position (absolute, null, 1rem, -0.3125rem, null);
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}

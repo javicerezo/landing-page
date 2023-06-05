@@ -1,0 +1,31 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-cuadrito {
+    &__contenedor {
+        @include m.flex (column, nowrap, center, center);
+        padding-right: 2rem;
+    }
+    &__contenedor--izq {
+        @include m.flex (column, nowrap, center, center);
+        padding-left: 2rem;
+    }
+    &__p {
+        padding: 1rem 0;
+        padding-right: 2rem;
+        border-right: 2px solid #000;
+        font-weight: bold;
+    }
+    &__p--izq {
+        padding: 1rem 0;
+        padding-left: 2rem;
+        border-left: 2px solid #000;
+        font-weight: bold;
+    }
+    &__i {
+        padding-right: 2rem;
+    }
+    &__i--izq {
+        padding-left: 2rem;
+    }
+}

@@ -1,0 +1,51 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-header {
+    @include m.position (absolute, 1rem, 0, null, 0);
+    background-color: transparent;
+    &__contenedor {
+        padding-top: 1rem;
+        margin: 0 auto;
+        @include m.flex (row, nowrap, space-between, center);
+        width: 80%;
+    }
+    &__logo {
+        padding: 1rem;
+        @include m.flex (row, nowrap, space-between, center);
+    }
+    &__izq {
+        border: 2px solid #000;
+        padding-right: 3rem;
+        border-radius: 5px;
+    }
+    &__der {
+        padding-left: 1rem;
+    }
+    &__p {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: map-get(v.$colores, color-primario);
+        span {
+            margin-left: 0.3rem;
+        }
+    }
+    &__nav {
+        @include m.flex (row, nowrap, center, center);
+    }
+    &__li {
+        padding: 0.7rem;
+        margin: 0 0.2rem;
+        font-size: 0.5em;
+        @include m.flex (row, nowrap, center, center);
+        cursor: pointer;
+    }
+    &__li:last-child {
+        font-size: 1rem;
+        background-color: red;
+        border-radius: 50%;
+    }
+    &__li:last-child:hover {
+        background-color: yellow;
+    }
+}

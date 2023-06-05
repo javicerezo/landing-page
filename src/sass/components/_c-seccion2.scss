@@ -1,0 +1,18 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-seccion2 {
+    margin: 3rem 0;
+    &__contenedor {
+        width: 90%;
+        @include m.flex (row, nowrap, center, center);
+        position: relative;
+    }
+    &__multimedia {
+        max-width: 15.625rem;
+        padding: 2rem;
+    }
+    &__cuadrito {
+        @include m.position (absolute, 1.3994rem, -5.3563rem, null, null);
+    }
+}

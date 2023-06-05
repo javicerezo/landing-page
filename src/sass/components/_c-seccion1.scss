@@ -1,0 +1,95 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
+.c-seccion1 {
+    margin: 0.5rem 0;
+    &__contenedor {
+        width: 90%;
+        position: relative;
+        @include m.flex (row, nowrap, space-between, center);
+        &-descripcion {
+            @include m.flex (column, nowrap, center, flex-start);
+            max-width: 400px;
+            position: relative;
+            margin-left: 10rem;
+        }
+        &-producto {
+            position: relative;
+            width: 350px;
+        }
+    }
+    &__cuadrito {
+        @include m.position (absolute, 1.3994rem, null, null, -5.3563rem);
+    }
+    &__titulo {
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    &__texto {
+        font-size: 1.1rem;
+    }
+    &__boton {
+        margin-top: 3rem;
+    }
+    &__producto {
+        background-color: #fff;
+        padding: 2rem;
+        @include m.position (relative, -5rem, 10rem, null, null); //REPASAR BIEN
+        box-shadow: 1px 12px 88px 2px rgba(0,0,0,0.76);
+        // box-shadow: 1px 5px 30px 2px rgba(0,0,0,0.75);
+        &-arriba, &-abajo {
+            margin: 0 auto;
+            width: 50%;
+            height: 10px;
+            background-color: #000;
+        }
+        &-arriba {
+            @include m.position (absolute, -.625rem, 0, null, 0);
+            border-radius: 5px 5px 0 0;
+        }
+        &-abajo {
+            @include m.position (absolute, null, 0, -.625rem, 0);
+            border-radius: 0 0 5px 5px;
+        }
+    }
+    &__nombre {
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+        &-h5 {
+            font-size: 1.2rem;
+            padding-bottom: 0.8rem;
+        }
+        &-h5:nth-child(2) {
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-left: 1rem;
+        }
+        &-raya {
+            border: 1px solid #000;
+            width: 30%;
+            margin-left: 1.5rem;
+        }
+    }
+    &__listado {
+        @include m.position (absolute, null, null, -1.5rem, -50%);
+        @include m.flex (column, nowrap, center, flex-start);
+        width: 100%;
+    }
+    &__ul, &__flechas {
+        @include m.flex (row, nowrap, center, center);
+    }
+    &__img {
+        max-width: 15.625rem;
+    }
+    &__divisor {
+        width: 90%;
+        margin: 1rem 0;
+        border: 2px solid #000;
+        border-radius: 5px;
+    }
+    &__li {
+        padding: 0 0.5rem;
+        cursor: pointer;
+    }
+}

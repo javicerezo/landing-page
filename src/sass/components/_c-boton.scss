@@ -1,0 +1,11 @@
+@use 'settings/variables' as v;
+
+.c-boton {
+    text-transform: capitalize;
+    background-color: map-get(v.$colores, color-botones);
+    cursor: pointer;
+    padding: 1rem 4rem;
+    &:hover {
+        background-color: map-get(v.$colores, color-botones-hover);
+    }
+}
