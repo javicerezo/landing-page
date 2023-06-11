@@ -74,9 +74,9 @@
         }
     }
     &__boton {
-        margin-top: 1rem;
+        margin: 2rem 0 2rem;
         @include m.tablet {
-            margin-top: 3rem;
+            margin: 4rem 0 2rem;
         }
     }
     &__producto {
