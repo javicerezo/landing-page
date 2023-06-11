@@ -2,6 +2,10 @@
 @use 'tools/mixins' as m;
 
 .c-cuadrito {
+    display: none;
+    @include m.desktop-m {
+        display: block;
+    }
     &__contenedor {
         @include m.flex (column, nowrap, center, center);
         padding-right: 2rem;

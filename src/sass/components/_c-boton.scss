@@ -1,11 +1,24 @@
 @use 'settings/variables' as v;
+@use 'tools/mixins' as m;
 
 .c-boton {
     text-transform: capitalize;
-    background-color: map-get(v.$colores, color-botones);
+    color: map-get(v.$colores, color-primario);
     cursor: pointer;
-    padding: 1rem 4rem;
+    padding: 0.8rem 3rem; 
+    font-size: 0.9rem;
+    @include m.neomorfismo (map-get(v.$colores, color-secundario-2), map-get(v.$colores, color-secundario-2), 0.5rem, null, 0.5rem, map-get(v.$colores, color-primario-2), map-get(v.$colores, color-secundario-2));
+    @include m.desktop {
+        padding: 1rem 4rem; 
+        font-size: 1rem;
+    }
+    @include m.desktop-xl {
+        font-size: 1.2rem;
+    }
     &:hover {
-        background-color: map-get(v.$colores, color-botones-hover);
+        @include m.neomorfismo (map-get(v.$colores, color-secundario-2), map-get(v.$colores, color-secundario-2), 0.5rem, null, 0.5rem, map-get(v.$colores, color-secundario-2), map-get(v.$colores, color-primario-2));
+    }
+    &:active {
+        @include m.neomorfismo (map-get(v.$colores, color-secundario-2), map-get(v.$colores, color-secundario-2), 0.5rem, inset, 2rem, map-get(v.$colores, color-secundario-2), map-get(v.$colores, color-primario-2));
     }
 }

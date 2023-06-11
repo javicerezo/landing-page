@@ -21,16 +21,16 @@
                 </div>
             </div>
             <ul class="c-header__nav">
-                <li class="c-header__li"><a href="#c-seccion1"><i class="fa-solid fa-circle"></i></a></li>
                 <li class="c-header__li"><a href="#c-seccion2"><i class="fa-solid fa-circle"></i></a></li>
-                <li class="c-header__li"><i class="fa-solid fa-bars"></i></li>
+                <li class="c-header__li"><a href="#c-seccion4"><i class="fa-solid fa-circle"></i></a></li>
+                <li class="c-header__li"><a href="#c-seccion5"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </div>
     </header>
 
     <section class="c-portada"></section>
-
-    <section class="c-seccion1" id="c-seccion1">
+    
+    <section class="c-seccion1">
         <div class="c-seccion1__contenedor">
             <div class="c-seccion1__contenedor-descripcion">
                 <div class="c-seccion1__cuadrito c-cuadrito">
@@ -40,43 +40,25 @@
                     </div>
                 </div>
                     <h2 class="c-seccion1__titulo">nueva coleccion</h2>
-                    <p class="c-seccion1__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis praesentium qui excepturi ipsa minima tenetur quibusdam aspernatur sint sed, nesciunt eveniet libero delectus adipisci, eligendi quidem possimus ducimus! Cum.</p>
+                    <p class="c-seccion1__texto">Para esquiadores de montaña que buscan el mejor rendimiento
+                        de unas botas mejoradas, con un peso extremadamente menor. La nueva colección de botas
+                        Dynafit, ofrecen nuevas soluciones técnicas, que como resultado, mejoran la flexión.
+                        Compatibles con todas las fijaciones de esquí de montaña del mercado.
                     <button class="c-seccion1__boton c-boton">ver</button>
             </div>
-            <div class="c-seccion1__contenedor-producto">
-                <div class="c-seccion1__producto">
-                    <div class="c-seccion1__producto-arriba"></div>
-                    <div class="c-seccion1__producto-abajo"></div>
-                    <div class="c-seccion1__nombre">
-                        <h5 class="c-seccion1__nombre-h5">Dynafit</h5>
-                        <h5 class="c-seccion1__nombre-h5">Mezzalama</h5>
-                        <div class="c-seccion1__nombre-raya"></div>
-                    </div>
-                    <div class="c-seccion1__img">
-                        <img src="build/img/nueva-coleccion/botas1.jpg" alt="imagen botas">
-                    </div>
-                    <div class="c-seccion1__listado">
-                        <ul class="c-seccion1__ul">
-                            <li class="c-seccion1__li"><i class="fa-solid fa-circle"></i></li>
-                            <li class="c-seccion1__li"><i class="fa-solid fa-circle"></i></li>
-                            <li class="c-seccion1__li"><i class="fa-solid fa-circle"></i></li>
-                        </ul>
-                        <div class="c-seccion1__divisor"></div>
-                        <div class="c-seccion1__flechas">
-                            <li class="c-seccion1__li"><i class="fa-solid fa-arrow-left-long"></i></li>
-                            <li class="c-seccion1__li"><i class="fa-solid fa-arrow-right-long"></i></li>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="c-seccion1__contenedor-producto js-seccion1__contenedor-producto">
+                
+            </div> 
         </div>
     </section>
 
-    <!-- HACER GRID O CARRUSEL CON LOS PRODUCTOS -->
     <section class="c-seccion2" id="c-seccion2">
         <div class="c-seccion2__contenedor">
             <div class="c-seccion2__multimedia">
-                <img src="build/img/nueva-coleccion/botas1.jpg" alt="imagen botas">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ey83JlMkyZ0"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 allowfullscreen></iframe>
             </div>
             <div class="c-seccion2__cuadrito c-cuadrito">
                 <div class="c-cuadrito__contenedor--izq">
@@ -86,8 +68,10 @@
             </div>
             <div class="c-seccion2__raya"></div>
         </div>
-        <div class="c-raya__contenedor">
-            <div class="c-raya__raya"></div>
+        <div class="c-raya">
+            <div class="c-raya__contenedor">
+                <div class="c-raya__raya"></div>
+            </div>
         </div>
     </section>
 
@@ -102,35 +86,60 @@
                 </div>
                 <h3 class="c-seccion3__titulo">perfeccionamiento</h3>
                 <h3 class="c-seccion3__titulo">llevado al limite</h3>
-                <p class="c-seccion3__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis praesentium qui excepturi ipsa minima tenetur quibusdam aspernatur sint sed, nesciunt eveniet libero delectus adipisci, eligendi quidem possimus ducimus! Cum.</p>
-                <div class="c-seccion3__botones">
-                    <i class="c-seccion3__botones-flecha fa-solid fa-arrow-right-long"></i>
-                    <button class="c-seccion3__botones-boton c-boton">comenzar</button>
-                </div>
-                <div class="c-seccion3__decoracion">
-                    <i class="fa-solid fa-circle"></i>
-                    <div class="c-seccion3__decoracion-contenedor">
-                        <div class="c-seccion3__decoracion-raya"></div>
-                        <div class="c-seccion3__decoracion-arriba"></div>
-                        <div class="c-seccion3__decoracion-abajo"></div>
+                <p class="c-seccion3__texto">Los productos DYNAFIT están expuestos a diversas cargas 
+                    extremas durante su ciclo de vida. En el laboratorio de DYNAFIT en Aschheim, cerca de Múnich, 
+                    se simulan estas cargas con varias máquinas de ensayos como parte del desarrollo de productos 
+                    y del control de calidad. Por un lado, los productos deben ser capaces de soportar fuerzas de 
+                    ensayo predefinidas y, por otro, se comprueba la durabilidad de nuevos materiales y combinaciones de componentes.</p>
+                <p class="c-seccion3__texto">Se utiliza un actuador de ensayo electromecánico para simular el movimiento 
+                    durante el ascenso al caminar cuesta arriba. La combinación de esquí, fijación y bota se carga con una 
+                    fuerza y un recorrido definidos. Se utilizan varios ciclos de prueba y modelos de carga, y la prueba 
+                    se lleva a cabo hasta un número predefinido de ciclos o hasta que un componente falla. El cilindro 
+                    de prueba (Fmáx.10 kN) puede colocarse en diferentes ángulos, la placa con ranura en T también permite 
+                    la sujeción de otros componentes y piezas.</p>
+                <div class="c-seccion3__botones c-boton2">
+                    <div class="c-boton2__botones">
+                    <i class="c-boton2__botones-flecha fa-solid fa-arrow-right-long"></i>
+                        <button class="c-boton2__botones-boton c-boton">comenzar</button>
+                    </div>
+                    <div class="c-boton2__decoracion">
+                        <i class="fa-solid fa-circle"></i>
+                        <div class="c-boton2__decoracion-contenedor">
+                            <div class="c-boton2__decoracion-raya"></div>
+                            <div class="c-boton2__decoracion-arriba"></div>
+                            <div class="c-boton2__decoracion-abajo"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="c-seccion4">
+    <section class="c-seccion4" id="c-seccion4">
         <div class="c-seccion4__contenedor">
             <div class="c-seccion4__multimedia">
                 <div class="c-seccion4__multimedia-arriba"></div>
                 <div class="c-seccion4__multimedia-abajo"></div>
-                <div class="c-seccion4__contenedor-imagen">
-                    <img src="build/img/nueva-coleccion/botas1.jpg" alt="imagen botas">
+                <div class="c-seccion4__multimedia-imagen">
+                    <img class="c-seccion4__imagen" src="build/img/nueva-coleccion/botas1.jpg" alt="imagen botas">
                 </div>
-                <div class="c-seccion4__contenedor-descripcion">
-                    <h3 class="c-seccion4__titulo">perfeccionamiento</h3>
-                    <h3 class="c-seccion4__titulo">llevado al limite</h3>
-                    <p class="c-seccion4__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis praesentium qui excepturi ipsa minima tenetur quibusdam aspernatur sint sed, nesciunt eveniet libero delectus adipisci, eligendi quidem possimus ducimus! Cum.</p>                
+                <div class="c-seccion4__multimedia-descripcion">
+                    <h3 class="c-seccion4__titulo">características</h3>
+                    <h3 class="c-seccion4__titulo">técnicas</h3>
+                    <ul class="c-seccion4__texto">
+                        <li><p class="c-seccion__texto-p">- Material de la carcasa inferior: Grilamid reforzado con fibra de vidrio.</p></li>
+                        <li><p class="c-seccion__texto-p">- Material del puño: Grilamid reforzado con fibra de vidrio.</p></li>
+                        <li><p class="c-seccion__texto-p">- Botín: Mezzalama Liner.</p></li>
+                        <li><p class="c-seccion__texto-p">- Suela: Pomoca Race.</p></li>
+                        <li><p class="c-seccion__texto-p">- Sistema de cierre Race Lock/Twistfit.</p></li>
+                        <li><p class="c-seccion__texto-p">- Inclinación hacia delante 10º-13º + liberación para caminar.</p></li>
+                        <li><p class="c-seccion__texto-p">- Sistema bota-fijacion Master Step.</p></li>
+                        <li><p class="c-seccion__texto-p">- 875g (talla 26).</p></li>
+                    </ul>
+                    <div class="c-seccion4__botones">
+                        <i class="c-seccion4__botones-flecha fa-solid fa-arrow-right-long"></i>
+                        <button class="c-seccion4__botones-boton">comprar ahora</button>
+                    </div>
                 </div>
             </div>
             <div class="c-seccion4__cuadrito c-cuadrito">
@@ -140,23 +149,60 @@
                 </div>
             </div>
         </div>
-        <div class="c-raya__contenedor">
-            <div class="c-raya__raya"></div>
+        <div class="c-raya">
+            <div class="c-raya__contenedor">
+                <div class="c-raya__raya"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="c-seccion5" id="c-seccion5">
+        <div class="c-seccion5__contenedor">
+            <div class="c-seccion5__encabezado">
+                <h3 class="c-seccion5__titulo">suscríbete <span>ahora</span></h3>
+                <h5 class="c-seccion5__titulo">Suscríbete ya y recibirás todas nuestras ofertas diarias por email</h3>
+                <div class="c-seccion5__encabezado-arriba"></div>
+                <div class="c-seccion5__encabezado-abajo"></div>
+                <div class="c-seccion5__encabezado-izq"></div>
+            </div>
+            <form class="c-seccion5__form" action="">
+                <fieldset class="c-seccion5__form-campos">
+                    <input type="text" placeholder="Tu nombre completo">
+                    <input type="text" placeholder="Tu dirección de email">
+                </fieldset>
+                <fieldset class="c-seccion5__form-campos c-boton2">
+                    <div class="c-boton2__botones">
+                        <i class="c-boton2__botones-flecha fa-solid fa-arrow-right-long"></i>
+                        <button class="c-boton2__botones-boton c-boton js-seccion5__form-boton">suscríbete</button>
+                    </div>
+                    <div class="c-boton2__decoracion">
+                        <i class="fa-solid fa-circle"></i>
+                        <div class="c-boton2__decoracion-contenedor">
+                            <div class="c-boton2__decoracion-raya"></div>
+                            <div class="c-boton2__decoracion-arriba"></div>
+                            <div class="c-boton2__decoracion-abajo"></div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </section>
 
     <footer class="c-footer o-container-100">
         <div class="c-footer__contenedor">
             <ul class="c-footer__ul">
-                <li class="c-footer__li"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li class="c-footer__li"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li class="c-footer__li"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                <li class="c-footer__li"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="c-footer__li"><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="c-footer__li"><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="c-footer__li"><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="c-footer__li"><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
             <div class="c-footer__copy">
                 <p>1995-2023 Tienda de Esquí y montaña S.L. Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
+
+    <script src="src/js/baseDatos.js"></script>
+    <script src="src/js/app.js"></script>
 </body>
 </html>

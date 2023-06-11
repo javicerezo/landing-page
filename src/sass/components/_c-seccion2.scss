@@ -2,15 +2,29 @@
 @use 'tools/mixins' as m;
 
 .c-seccion2 {
-    margin: 3rem 0;
+    margin: 1rem 0;
+    @include m.desktop {
+        margin: 3rem 0;
+    }
     &__contenedor {
-        width: 90%;
-        @include m.flex (row, nowrap, center, center);
         position: relative;
+        width: 100%;
+        padding: 1rem;
+        @include m.flex (row, nowrap, center, center);
+        @include m.desktop {
+            width: 90%;
+            padding: 0;
+        }
     }
     &__multimedia {
-        max-width: 15.625rem;
-        padding: 2rem;
+        width: 100%;
+        padding: 1rem;
+        @include m.flex (row, nowrap, center, center);
+        @include m.neomorfismo (map-get(v.$colores, color-secundario), map-get(v.$colores, color-secundario), 0.5rem, null, 0.5rem, map-get(v.$colores, color-primario-2), map-get(v.$colores, color-primario-2));
+        @include m.desktop {
+            margin-left: 10rem;
+            padding: 2rem;
+        }
     }
     &__cuadrito {
         @include m.position (absolute, 1.3994rem, -5.3563rem, null, null);

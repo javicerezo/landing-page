@@ -2,20 +2,48 @@
 @use 'tools/mixins' as m;
 
 .c-seccion1 {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
+    @include m.desktop {
+        margin: 0 0 3rem;
+    }
     &__contenedor {
-        width: 90%;
         position: relative;
-        @include m.flex (row, nowrap, space-between, center);
+        width: 100%;
+        padding: 1rem;
+        @include m.flex (column, nowrap, space-between, center);
+        @include m.tablet {
+            width: 90%;
+            padding: 0;
+            @include m.flex (row, nowrap, center, center);
+        }
         &-descripcion {
-            @include m.flex (column, nowrap, center, flex-start);
-            max-width: 400px;
             position: relative;
-            margin-left: 10rem;
+            @include m.flex (column, nowrap, center, center);
+            @include m.tablet {
+                @include m.flex (column, nowrap, center, flex-start);
+                margin-left: 2rem;
+                max-width: 400px;
+            }
+            @include m.desktop {
+                margin-left: 5rem;
+            }
+            @include m.desktop-m {
+                margin-left: 10rem;
+            } 
+            @include m.desktop-xl {
+                max-width: 600px;
+            }           
         }
         &-producto {
             position: relative;
-            width: 350px;
+            margin-top: 3rem;
+            @include m.tablet {
+                width: 350px;
+                margin-top: 0;
+            }
+            @include m.desktop-xl {
+                max-width: 500px;
+            }
         }
     }
     &__cuadrito {
@@ -23,21 +51,43 @@
     }
     &__titulo {
         text-transform: uppercase;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        @include m.telefono-xl {
+            font-size: 1.7rem;
+        }
+        @include m.desktop {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
     }
     &__texto {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
+        @include m.telefono-xl {
+            font-size: 0.9rem;
+        }
+        @include m.desktop {
+            font-size: 1rem;
+        }
+        @include m.desktop-xl {
+            font-size: 1.3rem;
+        }
     }
     &__boton {
-        margin-top: 3rem;
+        margin-top: 1rem;
+        @include m.tablet {
+            margin-top: 3rem;
+        }
     }
     &__producto {
-        background-color: #fff;
-        padding: 2rem;
-        @include m.position (relative, -5rem, 10rem, null, null); //REPASAR BIEN
-        box-shadow: 1px 12px 88px 2px rgba(0,0,0,0.76);
-        // box-shadow: 1px 5px 30px 2px rgba(0,0,0,0.75);
+        @include m.neomorfismo (map-get(v.$colores, color-secundario), map-get(v.$colores, color-secundario), 0.5rem, null, 0.5rem, map-get(v.$colores, color-primario-2), map-get(v.$colores, color-primario-2));
+        padding: 0.5rem;
+        @include m.telefono-xl {
+            padding: 2rem;
+        }
+        @include m.tablet {
+            @include m.position (relative, -7rem, -2rem, null, null); 
+        }
         &-arriba, &-abajo {
             margin: 0 auto;
             width: 50%;
@@ -45,11 +95,11 @@
             background-color: #000;
         }
         &-arriba {
-            @include m.position (absolute, -.625rem, 0, null, 0);
+            @include m.position (absolute, -0.75rem, 0, null, 0);
             border-radius: 5px 5px 0 0;
         }
         &-abajo {
-            @include m.position (absolute, null, 0, -.625rem, 0);
+            @include m.position (absolute, null, 0, -12px, 0);
             border-radius: 0 0 5px 5px;
         }
     }
@@ -59,6 +109,9 @@
         &-h5 {
             font-size: 1.2rem;
             padding-bottom: 0.8rem;
+            @include m.desktop-xl {
+                font-size: 1.5rem;
+            }
         }
         &-h5:nth-child(2) {
             text-transform: uppercase;
@@ -72,15 +125,22 @@
         }
     }
     &__listado {
-        @include m.position (absolute, null, null, -1.5rem, -50%);
         @include m.flex (column, nowrap, center, flex-start);
+        margin-top: 1rem;
         width: 100%;
+        @include m.tablet {
+            @include m.position (absolute, null, null, -1.5rem, -50%);
+            margin-top: 0;
+        }
     }
     &__ul, &__flechas {
         @include m.flex (row, nowrap, center, center);
     }
     &__img {
         max-width: 15.625rem;
+        @include m.desktop-xl {
+            max-width: 20rem;
+        }
     }
     &__divisor {
         width: 90%;

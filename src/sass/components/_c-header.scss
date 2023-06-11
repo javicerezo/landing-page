@@ -2,22 +2,32 @@
 @use 'tools/mixins' as m;
 
 .c-header {
-    @include m.position (absolute, 1rem, 0, null, 0);
-    background-color: transparent;
+    
     &__contenedor {
-        padding-top: 1rem;
+        width: 100%;
+        padding: 0.5rem;
         margin: 0 auto;
         @include m.flex (row, nowrap, space-between, center);
-        width: 80%;
+        @include m.tablet {
+            width: 80%;
+            padding: 1rem;
+        }
     }
     &__logo {
-        padding: 1rem;
-        @include m.flex (row, nowrap, space-between, center);
+        @include m.flex (column, nowrap, space-between, center);
+        @include m.telefono-xl {
+            @include m.flex (row, nowrap, space-between, center);
+            padding: 1rem;
+        }
     }
     &__izq {
+        margin: 1rem 0;
         border: 2px solid #000;
         padding-right: 3rem;
         border-radius: 5px;
+        @include m.tablet {
+            margin: 0;
+        }
     }
     &__der {
         padding-left: 1rem;
@@ -25,7 +35,6 @@
     &__p {
         text-transform: uppercase;
         font-weight: bold;
-        color: map-get(v.$colores, color-primario);
         span {
             margin-left: 0.3rem;
         }
@@ -36,16 +45,26 @@
     &__li {
         padding: 0.7rem;
         margin: 0 0.2rem;
-        font-size: 0.5em;
-        @include m.flex (row, nowrap, center, center);
+        font-size: 0.3em;
         cursor: pointer;
+        @include m.tablet {
+            padding: 0.7rem;
+            margin: 0 0.2rem;
+            font-size: 0.5em;
+        }
+        a {
+            @include m.flex (row, nowrap, center, center);
+        }
     }
     &__li:last-child {
-        font-size: 1rem;
-        background-color: red;
+        font-size: 0.7rem;
+        @include m.tablet {
+            font-size: 1rem;
+        }
+        background-color: map-get(v.$colores, color-botones);
         border-radius: 50%;
     }
     &__li:last-child:hover {
-        background-color: yellow;
+        background-color: map-get(v.$colores, color-botones-hover);
     }
 }

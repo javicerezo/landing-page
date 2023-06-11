@@ -1,7 +1,10 @@
+@use 'settings/variables' as v;
+@use 'tools/mixins' as m;
+
 .c-portada {
     background-image: url(../img/portada2.jpg);
     background-position: center;
-    background-size:contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment:local;
     width: 100%;
