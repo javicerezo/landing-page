@@ -88,6 +88,12 @@
         @include m.tablet {
             @include m.position (relative, -7rem, -2rem, null, null); 
         }
+        @include m.desktop {
+            right: -4rem;
+        }
+        @include m.desktop-m {
+            right: -5rem;
+        }
         &-arriba, &-abajo {
             margin: 0 auto;
             width: 50%;

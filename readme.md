@@ -1,11 +1,11 @@
 # Landing Page
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/assets/img/landing.png)
 
 ## Ejemplo en vivo
 - [Haz click para ver el proyecto](https://javicerezo.github.io/landing-page/) 🚀
 
 ## Descripción 📑
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Frontend de una landing page de la tienda online de montaña (del proyecto tienda online) para cpatar leads y potenciales compradores en el futuro. Hecha bajo arquitectura BEMIT y un js mínimo para darle funcionalidad.
 
 ## Tecnologías 🛠
 <!-- Iconos de https://github.com/alexandresanlim/Badges4-README.md-Profile -->
@@ -18,9 +18,9 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, 
 ## Vista previa del proyecto
 Si quieres hechar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/assets/img/landing-2.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/assets/img/landing-3.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/assets/img/landing-4.png)
 
 ## Autor ✒️
 **JAVI CEREZO**
