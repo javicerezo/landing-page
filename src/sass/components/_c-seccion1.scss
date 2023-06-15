@@ -80,7 +80,7 @@
         }
     }
     &__producto {
-        @include m.neomorfismo (map-get(v.$colores, color-secundario), map-get(v.$colores, color-secundario), 0.5rem, null, 0.5rem, map-get(v.$colores, color-primario-2), map-get(v.$colores, color-primario-2));
+        @include m.neomorfismo (map-get(v.$colores, color-secundario), map-get(v.$colores, color-secundario), 0.5rem, null, 0.5rem, map-get(v.$colores, color-primario-3), map-get(v.$colores, color-primario-3));
         padding: 0.5rem;
         @include m.telefono-xl {
             padding: 2rem;
@@ -98,7 +98,7 @@
             margin: 0 auto;
             width: 50%;
             height: 10px;
-            background-color: #000;
+            background-color: map-get(v.$colores, color-primario-2);
         }
         &-arriba {
             @include m.position (absolute, -0.75rem, 0, null, 0);
@@ -154,8 +154,12 @@
         border: 2px solid #000;
         border-radius: 5px;
     }
-    &__li {
+    &__li, &__flecha {
+        font-size: 0.7em;
         padding: 0 0.5rem;
         cursor: pointer;
+    }
+    &__flecha {
+        font-size: 1.5em;
     }
 }

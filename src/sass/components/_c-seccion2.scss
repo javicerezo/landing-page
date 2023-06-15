@@ -20,7 +20,7 @@
         width: 100%;
         padding: 1rem;
         @include m.flex (row, nowrap, center, center);
-        @include m.neomorfismo (map-get(v.$colores, color-secundario), map-get(v.$colores, color-secundario), 0.5rem, null, 0.5rem, map-get(v.$colores, color-primario-2), map-get(v.$colores, color-primario-2));
+        @include m.neomorfismo (map-get(v.$colores, color-secundario), map-get(v.$colores, color-secundario), 0.5rem, null, 0.5rem, map-get(v.$colores, color-primario-3), map-get(v.$colores, color-primario-3));
         @include m.desktop {
             margin-left: 10rem;
             padding: 2rem;
