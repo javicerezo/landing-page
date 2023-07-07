@@ -5,3 +5,20 @@
 .u-rotation {
     transform: rotate(180deg);
 }
+
+.u-mensaje {
+    font-size: 0.8em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem;
+    &--error {
+        color: red;
+    }
+    &--exito {
+        color: green;
+    }
+    &--alerta {
+        color: rgb(233, 233, 59);
+    }
+}

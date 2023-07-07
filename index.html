@@ -58,7 +58,8 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ey83JlMkyZ0"
                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                 allowfullscreen></iframe>
+                 allowfullscreen>
+                </iframe>
             </div>
             <div class="c-seccion2__cuadrito c-cuadrito">
                 <div class="c-cuadrito__contenedor--izq">
@@ -167,8 +168,8 @@
             </div>
             <form class="c-seccion5__form" action="">
                 <fieldset class="c-seccion5__form-campos">
-                    <input type="text" placeholder="Tu nombre completo">
-                    <input type="text" placeholder="Tu dirección de email">
+                    <input type="text" name="nombre" placeholder="Tu nombre completo">
+                    <input type="email" name="correo" placeholder="Tu dirección de email">
                 </fieldset>
                 <fieldset class="c-seccion5__form-campos c-boton2">
                     <div class="c-boton2__botones">
@@ -185,6 +186,47 @@
                     </div>
                 </fieldset>
             </form>
+            <div class="js-seccion5__contenedor-mensaje"></div>
+        </div>
+    </section>
+
+    <section class="c-modal js-modal">
+        <div class="c-modal__screen">
+            <div class='c-modal__li'>
+                <div class="c-seccion5__contenedor">
+                    <div class="c-seccion5__encabezado">
+                        <h3 class="c-seccion5__titulo">suscríbete <span>ahora</span></h3>
+                        <h5 class="c-seccion5__titulo">Suscríbete ya y recibirás todas nuestras ofertas diarias por email</h3>
+                        <div class="c-seccion5__encabezado-arriba"></div>
+                        <div class="c-seccion5__encabezado-abajo"></div>
+                        <div class="c-seccion5__encabezado-izq"></div>
+                    </div>
+                    <form class="c-seccion5__form" action="">
+                        <fieldset class="c-seccion5__form-campos">
+                            <input class='js-modal__input-nombre' type="text" name="nombre" placeholder="Tu nombre completo">
+                            <input class='js-modal__input-email' type="email" name="correo" placeholder="Tu dirección de email">
+                        </fieldset>
+                        <fieldset class="c-seccion5__form-campos c-boton2">
+                            <div class="c-boton2__botones">
+                                <i class="c-boton2__botones-flecha fa-solid fa-arrow-right-long"></i>
+                                <button class="c-boton2__botones-boton c-boton js-modal__form-boton">suscríbete</button>
+                            </div>
+                            <div class="c-boton2__decoracion">
+                                <i class="fa-solid fa-circle"></i>
+                                <div class="c-boton2__decoracion-contenedor">
+                                    <div class="c-boton2__decoracion-raya"></div>
+                                    <div class="c-boton2__decoracion-arriba"></div>
+                                    <div class="c-boton2__decoracion-abajo"></div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="js-modal__contenedor-mensaje"></div>
+                </div>
+                <div class='c-modal__li-close js-modal__li-close'>
+                    <i class='fa-solid fa-xmark'></i>
+                </div>
+            </div>
         </div>
     </section>
 

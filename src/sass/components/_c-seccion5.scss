@@ -86,7 +86,7 @@
             width: 100%;
             @include m.flex (row, nowrap, center, center);
             padding: 1rem;
-            input[type="text"] {
+            input {
                 width: 100%;
                 padding: 1rem;
                 border-bottom: 1px solid #000;
