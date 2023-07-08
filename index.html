@@ -166,15 +166,15 @@
                 <div class="c-seccion5__encabezado-abajo"></div>
                 <div class="c-seccion5__encabezado-izq"></div>
             </div>
-            <form class="c-seccion5__form" action="">
+            <form data-cy="js-seccion5__form" class="c-seccion5__form js-seccion5__form">
                 <fieldset class="c-seccion5__form-campos">
-                    <input type="text" name="nombre" placeholder="Tu nombre completo">
-                    <input type="email" name="correo" placeholder="Tu dirección de email">
+                    <input data-cy="js-seccion5__nombre" class='js-seccion5__input-nombre' type="text" name="nombre" placeholder="Tu nombre completo">
+                    <input data-cy="js-seccion5__correo" class='js-seccion5__input-correo' type="email" name="correo" placeholder="Tu dirección de email">
                 </fieldset>
                 <fieldset class="c-seccion5__form-campos c-boton2">
                     <div class="c-boton2__botones">
                         <i class="c-boton2__botones-flecha fa-solid fa-arrow-right-long"></i>
-                        <button class="c-boton2__botones-boton c-boton js-seccion5__form-boton">suscríbete</button>
+                        <button data-cy="js-seccion5__form-boton" class="c-boton2__botones-boton c-boton js-seccion5__form-boton">suscríbete</button>
                     </div>
                     <div class="c-boton2__decoracion">
                         <i class="fa-solid fa-circle"></i>
@@ -201,7 +201,7 @@
                         <div class="c-seccion5__encabezado-abajo"></div>
                         <div class="c-seccion5__encabezado-izq"></div>
                     </div>
-                    <form class="c-seccion5__form" action="">
+                    <form data-cy="js-modal__form" class="c-seccion5__form js-modal__form">
                         <fieldset class="c-seccion5__form-campos">
                             <input class='js-modal__input-nombre' type="text" name="nombre" placeholder="Tu nombre completo">
                             <input class='js-modal__input-email' type="email" name="correo" placeholder="Tu dirección de email">
@@ -244,7 +244,6 @@
         </div>
     </footer>
 
-    <script src="src/js/baseDatos.js"></script>
-    <script src="src/js/app.js"></script>
+    <script src="build/js/bundle.js" defer></script>
 </body>
 </html>

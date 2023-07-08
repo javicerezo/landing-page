@@ -1,12 +1,13 @@
 (function () {
+    
     // VARIABLES
     const contenedorProducto = document.querySelector('.js-seccion1__contenedor-producto');
     const contenedorMensaje = document.querySelector('.js-seccion5__contenedor-mensaje');
     const contenedorMensajeModal = document.querySelector('.js-modal__contenedor-mensaje');
-    const contenedorModal =  document.querySelector('.js-modal')
-    const inputNombre = document.querySelector('input[name = "nombre"]');
-    const inputCorreo = document.querySelector('input[name="correo"]');
-    const btnEnviar = document.querySelector('.js-seccion5__form-boton');
+    const contenedorModal =  document.querySelector('.js-modal');
+    const inputNombreSeccion5 = document.querySelector('.js-seccion5__input-nombre');
+    const inputCorreoSeccion5 = document.querySelector('.js-seccion5__input-correo');
+    const formularioSeccion5 = document.querySelector('.js-seccion5__form');
 
     let contador = 0;
     let infoCorreo = {
@@ -49,20 +50,31 @@
         });
     })
 
-    inputNombre.addEventListener('blur', rellenarCorreo);
-    inputCorreo.addEventListener('blur', rellenarCorreo);
-    btnEnviar.addEventListener('click', enviarCorreo);
-    
+    inputNombreSeccion5.addEventListener('blur', rellenarCorreo);
+    inputCorreoSeccion5.addEventListener('blur', rellenarCorreo);
+    formularioSeccion5.addEventListener('submit', e => {
+        e.preventDefault();
+        enviarCorreo(e);
+        resetInputs();
+        resetFormulario(formularioSeccion5);
+    }); 
+
     contenedorModal.addEventListener('click', e => {
-        const inputNombre = document.querySelector('.js-modal__input-nombre');
-        const inputCorreo = document.querySelector('.js-modal__input-email');
-        const btnEnviar = document.querySelector('.js-modal__form-boton');
+        const inputNombreModal = document.querySelector('.js-modal__input-nombre');
+        const inputCorreoModal = document.querySelector('.js-modal__input-email');
+        const formularioModal = document.querySelector('.js-modal__form');
         if (e.target.classList.contains('fa-xmark') || e.target.classList.contains('c-modal__screen')) {
             contenedorModal.classList.remove('c-modal--mod');
+            resetInputs();
         }
-        inputNombre.addEventListener('blur', rellenarCorreo);
-        inputCorreo.addEventListener('blur', rellenarCorreo);
-        btnEnviar.addEventListener('click', enviarCorreo);
+        inputNombreModal.addEventListener('blur', rellenarCorreo);
+        inputCorreoModal.addEventListener('blur', rellenarCorreo);
+        formularioModal.addEventListener('submit', e => {
+            e.preventDefault();
+            enviarCorreo(e);
+            resetInputs();
+            resetFormulario(formularioModal);
+        });
     });
     
     // FUNCIONES
@@ -92,7 +104,7 @@
             </div>
         `;
         contenedorProducto.appendChild(producto);
-    }
+    };
     
     function cargarBolitas (contenedor) {
         botasColeccion.forEach( bota => {
@@ -138,18 +150,20 @@
     }
 
     function enviarCorreo (e) {
-        e.preventDefault();
         const {nombre, correo} = infoCorreo;
         const correoCorrecto = comprobarCorreo(correo);
         let contenedor;
-        if(e.target.classList.contains('js-seccion5__form-boton')) {
+        if(e.target.classList.contains('js-seccion5__form')) {
             contenedor = contenedorMensaje;
         }
-        if(e.target.classList.contains('js-modal__form-boton')) {
+        if(e.target.classList.contains('js-modal__form')) {
             contenedor = contenedorMensajeModal;
         }
         if(nombre !=='' && correoCorrecto === true){
             mostrarMensaje(contenedor, 'exito', 'Se ha enviado correctamente');
+            setTimeout(() => {
+                contenedorModal.classList.remove('c-modal--mod');
+            }, 3500);
         } else {
             mostrarMensaje(contenedor, 'alerta', 'Error al rellenar los campos');
         }
@@ -169,6 +183,7 @@
         if(contenedorMensaje.childElementCount === 0) {
             const p = document.createElement('p');
             p.classList.add('u-mensaje');
+            p.dataset.cy = 'mensaje';
             p.textContent = mensaje;
             if (tipo === 'exito') {
                 p.classList.add(`u-mensaje--${tipo}`);
@@ -182,7 +197,7 @@
             contenedorMensaje.appendChild(p);
             setTimeout((e) => {
                 limpiarHTML(contenedorMensaje);
-            }, 3000);
+            }, 10000);
         }
     }
 
@@ -191,5 +206,16 @@
             contenedorModal.classList.add('c-modal--mod');
         }, tiempo);
     }
+
+    function resetInputs() {
+        infoCorreo.nombre = '';
+        infoCorreo.correo = '';
+    };
+
+    function resetFormulario (formulario){
+        setTimeout(() => {
+            formulario.reset();
+        }, 3000);
+    };
 
 })();

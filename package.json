@@ -4,7 +4,8 @@
   "description": "Landing Page para tienda online",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "test": "cypress open --browser chrome --e2e"
   },
   "keywords": [
     "SASS",
@@ -14,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^5.1.0",
+    "cypress": "^12.17.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cache": "^1.1.3",

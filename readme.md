@@ -5,7 +5,7 @@
 - [Haz click para ver el proyecto](https://javicerezo.github.io/landing-page/) 🚀
 
 ## Descripción 📑
-Frontend de una landing page de la tienda online de montaña (del proyecto tienda online) para cpatar leads y potenciales compradores en el futuro. Hecha bajo arquitectura BEMIT y un js mínimo para darle funcionalidad.
+Frontend de una landing page de la tienda online de montaña (del proyecto tienda online) para captar leads y potenciales compradores en el futuro. Hecha bajo arquitectura BEMIT y un js mínimo para darle funcionalidad. Contiene un modal que se activa a los 7 segundos de iniciarse la página. Contiene algunos test con Cypress.
 
 ## Tecnologías 🛠
 <!-- Iconos de https://github.com/alexandresanlim/Badges4-README.md-Profile -->
