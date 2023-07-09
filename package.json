@@ -2,7 +2,7 @@
   "name": "langing-page",
   "version": "1.0.0",
   "description": "Landing Page para tienda online",
-  "main": "gulpfile.js",
+  "main": "index.html",
   "scripts": {
     "dev": "gulp",
     "test": "cypress open --browser chrome --e2e"
