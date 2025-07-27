@@ -1,5 +1,5 @@
 # Landing Page
-![Imagen del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/public/assets/imgs/preview.png)
+![Imagen del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/public/assets/imgs/preview.png)
 
 ## Ejemplo en vivo
 - [Haz click para ver el proyecto](https://javicerezo.github.io/landing-page/) 🚀
