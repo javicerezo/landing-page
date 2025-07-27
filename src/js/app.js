@@ -22,6 +22,7 @@
         cargarModalSuscripcion(time);
         cargarSeccion1();
         
+        
         const ulBolitas = document.querySelector('.js-seccion1__ul');
         cargarBolitas(ulBolitas);
     
@@ -90,7 +91,7 @@
                 <div class="c-seccion1__nombre-raya"></div>
             </div>
             <div class="c-seccion1__img js-seccion1__img">
-                <img src="build/img/nueva-coleccion/botas0.jpg" alt="imagen botas">
+                <img src="public/assets/imgs/nueva-coleccion/botas0.jpg" alt="imagen botas">
             </div>
             <div class="c-seccion1__listado">
                 <ul class="c-seccion1__ul js-seccion1__ul">

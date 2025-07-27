@@ -2,7 +2,7 @@
 @use 'tools/mixins' as m;
 
 .c-portada {
-    background-image: url(../img/portada2.jpg);
+    background-image: url('../../public/assets/imgs/portada2.jpg');
     background-attachment: fixed;
     background-position: top;
     background-size: cover;

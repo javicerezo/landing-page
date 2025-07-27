@@ -1,5 +1,5 @@
 # Landing Page
-![Imagen del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/assets/img/landing.png)
+![Imagen del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/public/assets/imgs/preview.png)
 
 ## Ejemplo en vivo
 - [Haz click para ver el proyecto](https://javicerezo.github.io/landing-page/) 🚀
@@ -18,9 +18,9 @@ Frontend de una landing page de la tienda online de montaña (del proyecto tiend
 ## Vista previa del proyecto
 Si quieres hechar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/assets/img/landing-2.png)
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/assets/img/landing-3.png)
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/src/assets/img/landing-4.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/public/assets/imgs/preview-2.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/public/assets/imgs/preview-3.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/landing-page/master/public/assets/imgs/preview-4.png)
 
 ## Autor ✒️
 **JAVI CEREZO**
